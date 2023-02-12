@@ -1,0 +1,96 @@
+.wb-abs{
+    position:absolute;
+}
+.wb-rounded{
+    border-radius:30px;
+}
+
+.flex-align-top{
+    justify-content: start;
+    display:flex;
+}
+
+.btn-primary.wd-bright {
+    border: hidden;
+    background-color: deepskyblue;
+}
+
+.wd-text-bright{
+    color: deepskyblue;
+}
+
+.btn-primary.wd-dark{
+    border: hidden;
+    background-color: black;
+    font-weight: bold;
+}
+
+.nav-link{
+    color: gray;
+}
+.nav-link .hover{
+    color: gray;
+}
+
+.wd-button-md{
+    height:32px;
+}
+
+.wd-button-large{
+    height:44px
+}
+
+
+.wd-bg-offwhite{
+    background-color: rgba(247,249,248,0.94)
+}
+
+.nav-link:hover{
+    color: black;
+    font-weight: bold;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.nav-link:visited{
+    color: gray;
+    border:0;
+}
+.nav-link:active{
+    color: gray;
+    border:0;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a.list-group-item:hover{
+    color: gray;
+    font-weight: bold;
+}
+
+.nav-link.active{
+    color: black;
+    font-weight: bold;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-color: deepskyblue !important;
+    border-bottom: 4px solid;
+}
+
+.wd-small-font{
+    font-size:10px;
+}
+
+.wd-md-font{
+    font-size:13px;
+}
+
+.list-group-item.wd-active{
+    background-color: white;
+    color: black;
+    font-weight:bold;
+}

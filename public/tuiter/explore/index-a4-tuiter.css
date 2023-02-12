@@ -1,0 +1,11 @@
+.wb-abs{
+    position:absolute;
+}
+.wb-rounded{
+    border-radius:20px;
+}
+
+.flex-align-top{
+    justify-content: start;
+    display:flex;
+}
