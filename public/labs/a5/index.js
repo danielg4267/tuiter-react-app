@@ -280,11 +280,6 @@ const init = () => {
     hideBtn.click(hideHandler);
     showBtn.click(showHandler);
 
-    //to change later
-    $("#hello").html("HEYHEYHEY");
-
-    $("h1").append("World!");
-
 
 
 
