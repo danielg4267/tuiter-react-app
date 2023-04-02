@@ -1,6 +1,6 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import {deleteTuit, like} from "../reducers/home-tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuit-thunks";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import TuitStats from "./tuit-stats";
@@ -31,7 +31,7 @@ const PostItem = (
 
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
 
     return(

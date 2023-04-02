@@ -1,8 +1,8 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import {like} from "../reducers/home-tuits-reducer";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import {updateTuitThunk} from "../../services/tuit-thunks";
 
 const TuitStats = (
     {
@@ -26,7 +26,6 @@ const TuitStats = (
 ) => {
 
     const dispatch = useDispatch();
-    const toggleLike = (post) => {dispatch(like(post))}
 
     return(
         <table className="text-secondary float-end me-3 mt-2 w-75">
@@ -35,7 +34,7 @@ const TuitStats = (
                 <th><span><i className="bi bi-chat-right"></i> {post.replies}</span></th>
                 <th><span><i className="bi bi-repeat"></i> {post.retuits}</span></th>
                 <th>
-                    <span onClick={() => toggleLike(post)}><i className={post.liked ? "bi bi-heart-fill text-danger" : "bi bi-heart"}></i> {post.likes}</span>
+                    <span onClick={() => dispatch(updateTuitThunk({...post, liked: true, likes: post.likes+1}))} ><i className={post.liked ? "bi bi-heart-fill text-danger" : "bi bi-heart"}></i> {post.likes}</span>
                 </th>
                 <th><span><i className="bi bi-upload"></i></span></th>
             </tr>
