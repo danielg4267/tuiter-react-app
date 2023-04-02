@@ -34,6 +34,8 @@ const PostItem = (
         dispatch(deleteTuitThunk(id));
     }
 
+    console.log(post);
+
     return(
         <li className="list-group-item">
             <div className="row m-2">
